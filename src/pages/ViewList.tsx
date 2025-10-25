@@ -8,8 +8,8 @@ export const ViewList = () => {
 
   return (
     <div className="container">
-      {todolist.map((todo: ToDo, idx: number) => {
-        return <ListItem todo={todo} key={idx} />;
+      {todolist.map((todo: ToDo) => {
+        return <ListItem todo={todo} key={todo.id} />;
       })}
     </div>
   );

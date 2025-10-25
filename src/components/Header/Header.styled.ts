@@ -19,6 +19,7 @@ export const HeaderInner = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 `;
 
 export const HeaderLink = styled(NavLink)`
@@ -30,3 +31,26 @@ export const HeaderLink = styled(NavLink)`
     color: #ffffff33;
   }
 `;
+
+export const ToggleButton = styled.button`
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #fff;
+    color: #4682b4;
+  }
+
+  &:active {
+    transform: translateY(-48%);
+  }
+`

@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Layout } from "./Layouts/Layout";
+import { Layout } from "./layouts/Layout";
 import { NotFound } from "./pages/404";
 import { ToDoListPage } from "./pages/ToDoListPage";
 import { ViewList } from "./pages/ViewList";
